@@ -5,6 +5,7 @@
     { "src": "public/**", "use": "@vercel/static" }
   ],
   "routes": [
+    { "src": "/test.php", "dest": "/public/test.php" },
     { "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf))", "dest": "/public/$1" },
     { "src": "/(.*)", "dest": "/public/index.php" }
   ]
