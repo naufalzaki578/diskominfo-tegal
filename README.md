@@ -1,58 +1,167 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Portal Pendaftaran Magang - Diskominfo Kab. Tegal
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/images/logo-tegal.svg" width="100" alt="Logo Diskominfo Kabupaten Tegal" />
+  <br>
+  <strong>Dinas Komunikasi dan Informatika Pemerintah Kabupaten Tegal</strong>
+  <br>
+  <em>Portal Resmi Penerimaan & Pengelolaan Magang Mahasiswa serta Pelajar SMK/SMA</em>
 </p>
 
-## About Laravel
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 11" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Database-SQLite%20%2F%20MySQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="Database" />
+  <img src="https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 📌 Tentang Aplikasi
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Portal Pendaftaran Magang Diskominfo Kabupaten Tegal adalah aplikasi web modern berbasis **Laravel 11** yang dirancang untuk mempermudah alur pendaftaran, seleksi berkas, dan pemantauan peserta magang/praktik kerja lapangan (PKL) di lingkungan Dinas Komunikasi dan Informatika Kabupaten Tegal secara transparan, akuntabel, dan digital.
 
-## Learning Laravel
+Aplikasi telah dioptimalkan agar **100% responsif di semua perangkat** (smartphone, tablet, maupun desktop) dan siap di-deploy langsung ke **Vercel** maupun server VPS lokal.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## ✨ Fitur Utama
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+1. **Beranda Interaktif & Responsif**:
+   - Hero banner informatif dengan tombol pendaftaran cepat dan pelacakan berkas.
+   - Pilihan 4 bidang divisi kerja: *E-Government & SPBE*, *Keamanan Siber & Sandi*, *Informasi & Komunikasi Publik*, serta *Statistik & Analisis Data*.
+   - Alur pendaftaran 4 langkah dan FAQ accordion seputar persyaratan.
+2. **Formulir Pendaftaran Terstruktur**:
+   - Pengelompokan data diri, data institusi (kampus/sekolah), periode magang, dan unggah berkas.
+   - Box unggah PDF kustom untuk Surat Pengantar Instansi (wajib) dan Curriculum Vitae (opsional) dengan batas maksimal 2MB.
+3. **Lacak Berkas Mandiri (`/cek-status`)**:
+   - Calon peserta dapat memantau progres verifikasi berkas secara *real-time* cukup dengan memasukkan Email atau NIM/NIS tanpa perlu login.
+   - Menampilkan tahapan pendaftaran dan instruksi lanjutan jika dinyatakan diterima.
+4. **Panel Administrator (`/admin/registrasi`)**:
+   - Statistik pendaftar: Total, Perlu Verifikasi (*Menunggu*), Disetujui (*Diterima*), dan Ditolak.
+   - Pencarian berdasarkan nama, NIM, instansi, atau email.
+   - Tabel responsif ramah seluler dilengkapi tautan pratinjau & unduh Surat Pengantar dan CV peserta.
+   - Tombol persetujuan/penolakan instan beserta pembuatan akun otomatis untuk peserta yang lolos.
+5. **Dashboard Pengguna (`/dashboard`)**:
+   - Dashboard peserta magang yang memuat informasi jadwal hari pertama, seragam, dan berkas fisik yang harus dibawa.
+   - Dashboard ringkas khusus staf administrator.
+6. **Warta & Pengumuman Dinas (`/pengumuman`)**:
+   - Publikasi informasi resmi seputar pembukaan gelombang, jadwal wawancara, dan hasil seleksi.
 
-## Agentic Development
+---
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## 👥 Kredensial Akun Pengujian (Demo)
 
-```bash
-composer require laravel/boost --dev
+Gunakan kredensial berikut pada halaman [Login](/login) (tersedia tombol cepat *Akses Cepat Pengujian*):
 
-php artisan boost:install
+| Role | Email | Password | Hak Akses |
+| :--- | :--- | :--- | :--- |
+| **Administrator** | `admin@diskominfo.tegalkab.go.id` | `password` | Kelola pendaftar di `/admin/registrasi` |
+| **Peserta Magang** | `budi@mahasiswa.ac.id` | `password` | Lihat status & panduan di `/dashboard` |
+
+---
+
+## 🚀 Panduan Menjalankan Secara Lokal
+
+### Prasyarat
+- PHP >= 8.2 (dengan ekstensi `pdo_sqlite` / `pdo_mysql`, `fileinfo`, `mbstring`, `openssl`)
+- Composer
+- Node.js (opsional untuk pengembangan aset Vite)
+
+### Langkah-langkah:
+1. **Clone repositori**:
+   ```bash
+   git clone https://github.com/naufalzaki578/diskominfo-tegal.git
+   cd diskominfo-tegal
+   ```
+
+2. **Install Dependensi PHP**:
+   ```bash
+   composer install
+   ```
+
+3. **Pengaturan Environment**:
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+   *(Secara default, aplikasi telah dikonfigurasi menggunakan SQLite siap pakai).*
+
+4. **Migrasi Database & Seeder**:
+   ```bash
+   php artisan migrate --seed
+   ```
+
+5. **Hubungkan Storage Link**:
+   ```bash
+   php artisan storage:link
+   ```
+
+6. **Jalankan Web Server**:
+   ```bash
+   php artisan serve
+   ```
+   Akses website di browser: **[http://127.0.0.1:8000](http://127.0.0.1:8000)**
+
+---
+
+## ☁️ Panduan Deploy ke Vercel
+
+Repositori ini telah dilengkapi dengan konfigurasi `vercel.json` dan `api/index.php` yang disesuaikan khusus untuk arsitektur *Serverless Function* Vercel.
+
+### Cara 1: Deploy Otomatis via GitHub (Direkomendasikan)
+1. Buka dashboard [Vercel](https://vercel.com) dan klik **"Add New..."** &rarr; **"Project"**.
+2. Pilih repositori **`naufalzaki578/diskominfo-tegal`** dan klik **Import**.
+3. Di bagian **Environment Variables**, tambahkan:
+   - `APP_KEY`: `base64:MM5tc+YRHz+p0u/8PcWQCJnz6GkQuLHVFGYTid74T0I=` *(atau generate baru)*
+   - `APP_ENV`: `production`
+   - `APP_DEBUG`: `false`
+   - `DB_CONNECTION`: `sqlite`
+4. Klik tombol **Deploy**. Vercel akan secara otomatis membangun aplikasi dan memberikan URL publik resmi.
+
+### Cara 2: Deploy via Vercel CLI
+1. Login ke Vercel CLI di terminal:
+   ```bash
+   vercel login
+   ```
+2. Jalankan perintah deploy ke production:
+   ```bash
+   vercel --prod
+   ```
+
+---
+
+## 🏢 Struktur Direktori
+
+```text
+├── api/
+│   └── index.php           # Entry point serverless untuk Vercel
+├── app/
+│   ├── Http/Controllers/  # Controller (Home, Registrasi, Pengumuman, Profil, Auth)
+│   └── Models/             # Model Eloquent (User, Registrasi, Pengumuman)
+├── database/
+│   ├── database.sqlite     # Database SQLite bawaan dengan data contoh
+│   ├── migrations/         # Skema tabel database
+│   └── seeders/            # Seeder data admin, peserta, dan pengumuman
+├── public/
+│   ├── images/logo-tegal.svg # Logo resmi vektor Diskominfo Kab. Tegal
+│   └── index.php           # Entry point standar PHP
+├── resources/
+│   └── views/              # Blade template responsif (layout, home, status, admin, dsb.)
+├── routes/
+│   └── web.php             # Rute URL aplikasi
+├── vercel.json             # Konfigurasi runtime serverless Vercel
+└── README.md
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+## 📞 Kontak & Sekretariat
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **Instansi**: Dinas Komunikasi dan Informatika Kabupaten Tegal
+- **Alamat**: Jl. Dr. Soetomo No. 1, Slawi Kulon, Kec. Slawi, Kabupaten Tegal, Jawa Tengah 52419
+- **Email**: `magang@diskominfo.tegalkab.go.id`
+- **WhatsApp**: 0812-3456-7890
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+&copy; 2026 Dinas Komunikasi dan Informatika Kabupaten Tegal. Seluruh Hak Cipta Dilindungi.
