@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e40af" />
+      <stop offset="100%" stop-color="#0f2b48" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Shield Base -->
+  <path d="M60 10 L102 24 C102 65 85 96 60 110 C35 96 18 65 18 24 Z" 
+        fill="url(#shieldGrad)" stroke="url(#goldGrad)" stroke-width="3" filter="url(#shadow)"/>
+
+  <!-- Inner border -->
+  <path d="M60 16 L96 28 C96 62 81 90 60 102 C39 90 24 62 24 28 Z" 
+        fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.6"/>
+
+  <!-- Tech Network Nodes -->
+  <line x1="60" y1="42" x2="42" y2="58" stroke="#93c5fd" stroke-width="2" opacity="0.8"/>
+  <line x1="60" y1="42" x2="78" y2="58" stroke="#93c5fd" stroke-width="2" opacity="0.8"/>
+  <line x1="42" y1="58" x2="60" y2="76" stroke="#93c5fd" stroke-width="2" opacity="0.8"/>
+  <line x1="78" y1="58" x2="60" y2="76" stroke="#93c5fd" stroke-width="2" opacity="0.8"/>
+  <line x1="60" y1="42" x2="60" y2="76" stroke="url(#goldGrad)" stroke-width="2.5"/>
+
+  <!-- Star at top -->
+  <polygon points="60,25 63,32 70,32 64,37 66,44 60,40 54,44 56,37 50,32 57,32" fill="url(#goldGrad)"/>
+
+  <!-- Center Monogram / Emblem -->
+  <circle cx="60" cy="59" r="9" fill="#1e3a8a" stroke="url(#goldGrad)" stroke-width="2"/>
+  <circle cx="60" cy="59" r="4" fill="#fbbf24"/>
+
+  <!-- Side Nodes -->
+  <circle cx="42" cy="58" r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="78" cy="58" r="5" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5"/>
+  <circle cx="60" cy="76" r="6" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="1.5"/>
+
+  <!-- Banner at bottom -->
+  <path d="M36 86 Q60 92 84 86 Q86 93 84 94 Q60 100 36 94 Z" fill="url(#goldGrad)"/>
+  <text x="60" y="93" font-family="'Poppins', sans-serif" font-weight="bold" font-size="6" fill="#0f172a" text-anchor="middle" letter-spacing="1">TEGAL</text>
+</svg>
