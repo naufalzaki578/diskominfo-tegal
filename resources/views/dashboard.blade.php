@@ -117,17 +117,19 @@
 
                     {{-- Panduan Peserta Diterima --}}
                     @if ($registrasi->status === 'diterima')
-                        <div class="mt-5 p-5 bg-emerald-50 rounded-2xl border border-emerald-200 text-emerald-950 space-y-2">
+                        <div class="mt-5 p-5 bg-emerald-50 rounded-2xl border border-emerald-200 text-emerald-950 space-y-3">
                             <h3 class="font-bold text-sm sm:text-base flex items-center gap-2">
                                 <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
                                 <span>Informasi Hari Pertama Magang:</span>
                             </h3>
-                            <ul class="list-disc list-inside text-xs sm:text-sm text-emerald-900 space-y-1 pl-1">
-                                <li><strong>Waktu Kedatangan:</strong> Hadir pukul 07.30 WIB di Kantor Diskominfo Slawi pada tanggal {{ $registrasi->tanggal_mulai->translatedFormat('d F Y') }}.</li>
+                            <ul class="list-disc list-inside text-xs sm:text-sm text-emerald-900 space-y-1.5 pl-1">
+                                <li><strong>Waktu Kedatangan:</strong> Hadir tepat waktu pukul <strong>07.15 WIB</strong> pada tanggal {{ $registrasi->tanggal_mulai->translatedFormat('d F Y') }}.</li>
+                                <li><strong>Lokasi Kantor:</strong> Gedung Diskominfo Kab. Tegal — <em>Jl. DR. Soetomo No.1, Dukuh Ringin, Dukuhwringin, Kec. Slawi, Kabupaten Tegal, Jawa Tengah 52415</em> (±3 mnt dari Alun-Alun Slawi).</li>
                                 <li><strong>Pakaian:</strong> Kemeja putih berkerah, celana/rok bahan hitam rapi, dan sepatu tertutup.</li>
-                                <li><strong>Kelengkapan:</strong> Membawa <em>Surat Pengantar Asli</em> dari instansi dan laptop pribadi jika diperlukan.</li>
+                                <li><strong>Kelengkapan:</strong> Membawa <em>Surat Pengantar Asli</em> dari instansi asal dan laptop pribadi.</li>
+                                <li><strong>Hotline Kantor:</strong> <a href="tel:02834561555" class="underline font-bold">(0283) 4561555</a> jika membutuhkan informasi lebih lanjut.</li>
                             </ul>
                         </div>
                     @endif

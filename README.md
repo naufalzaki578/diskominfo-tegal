@@ -159,9 +159,12 @@ Repositori ini telah dilengkapi dengan konfigurasi `vercel.json` dan `api/index.
 ## 📞 Kontak & Sekretariat
 
 - **Instansi**: Dinas Komunikasi dan Informatika Kabupaten Tegal
-- **Alamat**: Jl. Dr. Soetomo No. 1, Slawi Kulon, Kec. Slawi, Kabupaten Tegal, Jawa Tengah 52419
+- **Alamat**: Jl. DR. Soetomo No.1, Dukuh Ringin, Dukuhwringin, Kec. Slawi, Kabupaten Tegal, Jawa Tengah 52415
+- **Provinsi**: Jawa Tengah
+- **Lama Perjalanan**: ±3 menit dari Alun-Alun Hanggawana Slawi
+- **Telepon**: [(0283) 4561555](tel:02834561555)
+- **Jam Operasional**: Buka Senin – Jumat pukul 07.15 WIB (Sabtu, Minggu & Libur Nasional: Tutup)
 - **Email**: `magang@diskominfo.tegalkab.go.id`
-- **WhatsApp**: 0812-3456-7890
 
 ---
 &copy; 2026 Dinas Komunikasi dan Informatika Kabupaten Tegal. Seluruh Hak Cipta Dilindungi.

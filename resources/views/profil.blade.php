@@ -175,6 +175,97 @@
                 <p class="text-xs text-slate-500 mt-1">Pengalaman di proyek ril pemerintahan.</p>
             </div>
         </div>
+    </div>
+</section>
+
+{{-- ============ DETAIL KANTOR & PELAYANAN ============ --}}
+<section class="py-12 md:py-16 bg-slate-50 border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-xs font-bold uppercase tracking-wider text-diskominfo-blue bg-blue-50 border border-blue-200 px-3 py-1 rounded-full">
+                Sekretariat & Operasional
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-3">
+                Lokasi Kantor Diskominfo Kab. Tegal
+            </h2>
+            <p class="text-slate-600 text-sm mt-2">
+                Pusat kendali dan layanan administrasi informasi dan komunikasi publik Pemerintah Kabupaten Tegal.
+            </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/80 shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 text-diskominfo-blue flex items-center justify-center shrink-0 mt-0.5">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Alamat Lengkap</h4>
+                            <p class="text-sm font-semibold text-slate-900 mt-1 leading-relaxed">
+                                Jl. DR. Soetomo No.1, Dukuh Ringin, Dukuhwringin, Kec. Slawi, Kabupaten Tegal, Jawa Tengah 52415
+                            </p>
+                            <span class="inline-block mt-2 text-xs text-blue-700 bg-blue-50 font-medium px-2.5 py-0.5 rounded-md">
+                                Lama Perjalanan: ±3 menit dari Alun-Alun Hanggawana Slawi
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 pt-3 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Telepon & Kontak</h4>
+                            <a href="tel:02834561555" class="text-sm font-bold text-diskominfo-blue hover:underline mt-1 block">
+                                (0283) 4561555
+                            </a>
+                            <p class="text-xs text-slate-500 mt-0.5">Email: magang@diskominfo.tegalkab.go.id</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-3 pt-3 border-t border-slate-100">
+                        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 mt-0.5">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        </div>
+                        <div>
+                            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Jam Operasional Pelayanan</h4>
+                            <p class="text-sm font-semibold text-slate-900 mt-1">
+                                Buka Senin – Jumat pukul 07.15 WIB
+                            </p>
+                            <p class="text-xs text-slate-500 mt-0.5">Sabtu, Minggu & Hari Libur Nasional: Tutup</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-900 to-diskominfo-blue text-white p-6 rounded-2xl flex flex-col justify-between h-full shadow-inner">
+                    <div>
+                        <div class="flex items-center gap-2 text-diskominfo-gold text-xs font-bold uppercase tracking-wider">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                            <span>Panduan Navigasi</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mt-2">Kunjungi Kantor Diskominfo</h4>
+                        <p class="text-xs text-slate-200 mt-2 leading-relaxed">
+                            Terletak strategis di pusat pemerintahan Kabupaten Tegal, dekat dengan kompleks Pemda Tegal dan Alun-Alun Slawi.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-white/10 flex flex-col sm:flex-row gap-3">
+                        <a href="https://maps.google.com/?q=Diskominfo+Kabupaten+Tegal+Jl.+DR.+Soetomo+No.1+Slawi" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="inline-flex items-center justify-center gap-2 bg-diskominfo-gold hover:bg-amber-400 text-slate-950 font-bold px-4 py-2.5 rounded-xl text-xs transition shadow">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                            <span>Buka di Google Maps</span>
+                        </a>
+                        <a href="tel:02834561555" 
+                           class="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white font-medium px-4 py-2.5 rounded-xl text-xs border border-white/20 transition">
+                            <span>Hubungi Sekretariat</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="mt-12 text-center">
             <a href="{{ route('registrasi.create') }}" 

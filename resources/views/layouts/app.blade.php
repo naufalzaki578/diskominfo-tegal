@@ -46,13 +46,13 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                     </svg>
-                    Slawi, Kabupaten Tegal - Jawa Tengah
+                    Slawi, Kabupaten Tegal, Jawa Tengah 52415
                 </span>
                 <span class="flex items-center gap-1.5">
                     <svg class="w-3.5 h-3.5 text-diskominfo-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
-                    Jam Pelayanan: Senin - Jumat (07.30 - 16.00 WIB)
+                    Jam Pelayanan: Senin - Jumat (Buka 07.15 WIB)
                 </span>
             </div>
             <div class="flex items-center gap-4">
@@ -339,7 +339,7 @@
                         <svg class="w-4 h-4 text-diskominfo-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                         </svg>
-                        <span>Jl. Dr. Soetomo No. 1, Slawi Kulon, Kec. Slawi, Kabupaten Tegal, Jawa Tengah 52419</span>
+                        <span>Jl. DR. Soetomo No.1, Dukuh Ringin, Dukuhwringin, Kec. Slawi, Kabupaten Tegal, Jawa Tengah 52415</span>
                     </p>
                     <p class="text-xs text-slate-400 flex items-center gap-2">
                         <svg class="w-4 h-4 text-diskominfo-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -351,7 +351,19 @@
                         <svg class="w-4 h-4 text-diskominfo-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
                         </svg>
-                        <span>(0283) 491876 / WhatsApp: 0812-3456-7890</span>
+                        <a href="tel:02834561555" class="hover:text-white transition">Telp: (0283) 4561555</a>
+                    </p>
+                    <p class="text-xs text-slate-400 flex items-center gap-2">
+                        <svg class="w-4 h-4 text-diskominfo-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>Jam: Buka Senin - Jumat pukul 07.15 WIB</span>
+                    </p>
+                    <p class="text-xs text-slate-400 flex items-center gap-2">
+                        <svg class="w-4 h-4 text-diskominfo-gold shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                        <span>Lama Perjalanan: ±3 mnt dari Alun-Alun Slawi</span>
                     </p>
                 </div>
             </div>
