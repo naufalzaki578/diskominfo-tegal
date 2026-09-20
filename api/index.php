@@ -40,4 +40,12 @@ if (file_exists($tmpSqlite)) {
     $_SERVER['DB_DATABASE'] = $tmpSqlite;
 }
 
+// Forward HTTPS for reverse proxies like Vercel
+if ((isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') ||
+    (isset($_SERVER['HTTP_X_FORWARDED_SSL']) && $_SERVER['HTTP_X_FORWARDED_SSL'] === 'on') ||
+    isset($_SERVER['VERCEL'])) {
+    $_SERVER['HTTPS'] = 'on';
+    $_SERVER['SERVER_PORT'] = '443';
+}
+
 require __DIR__ . '/../public/index.php';
