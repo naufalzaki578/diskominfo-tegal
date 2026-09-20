@@ -15,6 +15,10 @@
   <img src="https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
 </p>
 
+<p align="center">
+  🌐 <strong>Live Website di Vercel:</strong> <a href="https://diskominfo-tegal-main.vercel.app">https://diskominfo-tegal-main.vercel.app</a>
+</p>
+
 ---
 
 ## 📌 Tentang Aplikasi
