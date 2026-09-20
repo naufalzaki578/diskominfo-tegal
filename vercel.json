@@ -22,8 +22,14 @@
     }
   ],
   "env": {
+    "APP_NAME": "Diskominfo Kab. Tegal",
     "APP_ENV": "production",
+    "APP_KEY": "base64:MM5tc+YRHz+p0u/8PcWQCJnz6GkQuLHVFGYTid74T0I=",
     "APP_DEBUG": "false",
+    "APP_URL": "https://diskominfo-tegal-main.vercel.app",
+    "DB_CONNECTION": "sqlite",
+    "DB_DATABASE": "/tmp/database.sqlite",
+    "APP_STORAGE": "/tmp/storage",
     "APP_CONFIG_CACHE": "/tmp/config.php",
     "APP_EVENTS_CACHE": "/tmp/events.php",
     "APP_PACKAGES_CACHE": "/tmp/packages.php",
