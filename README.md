@@ -25,7 +25,7 @@
 
 Portal Pendaftaran Magang Diskominfo Kabupaten Tegal adalah aplikasi web modern berbasis **Laravel 11** yang dirancang untuk mempermudah alur pendaftaran, seleksi berkas, dan pemantauan peserta magang/praktik kerja lapangan (PKL) di lingkungan Dinas Komunikasi dan Informatika Kabupaten Tegal secara transparan, akuntabel, dan digital.
 
-Aplikasi telah dioptimalkan agar **100% responsif di semua perangkat** (smartphone, tablet, maupun desktop) dan siap di-deploy langsung ke **Vercel** maupun server VPS lokal.
+Aplikasi telah dioptimalkan agar **100% responsif di semua perangkat** (smartphone, tablet, maupun desktop) dan siap dijalankan dengan konfigurasi yang mudah.
 
 ---
 
@@ -105,33 +105,7 @@ Gunakan kredensial berikut pada halaman [Login](/login) (tersedia tombol cepat *
    ```bash
    php artisan serve
    ```
-   Akses website di browser: **[http://127.0.0.1:8000](http://127.0.0.1:8000)**
-
----
-
-## ☁️ Panduan Deploy ke Vercel
-
-Repositori ini telah dilengkapi dengan konfigurasi `vercel.json` dan `api/index.php` yang disesuaikan khusus untuk arsitektur *Serverless Function* Vercel.
-
-### Cara 1: Deploy Otomatis via GitHub (Direkomendasikan)
-1. Buka dashboard [Vercel](https://vercel.com) dan klik **"Add New..."** &rarr; **"Project"**.
-2. Pilih repositori **`naufalzaki578/diskominfo-tegal`** dan klik **Import**.
-3. Di bagian **Environment Variables**, tambahkan:
-   - `APP_KEY`: `base64:MM5tc+YRHz+p0u/8PcWQCJnz6GkQuLHVFGYTid74T0I=` *(atau generate baru)*
-   - `APP_ENV`: `production`
-   - `APP_DEBUG`: `false`
-   - `DB_CONNECTION`: `sqlite`
-4. Klik tombol **Deploy**. Vercel akan secara otomatis membangun aplikasi dan memberikan URL publik resmi.
-
-### Cara 2: Deploy via Vercel CLI
-1. Login ke Vercel CLI di terminal:
-   ```bash
-   vercel login
-   ```
-2. Jalankan perintah deploy ke production:
-   ```bash
-   vercel --prod
-   ```
+    Akses website di browser: **[http://127.0.0.1:8000](http://127.0.0.1:8000)**
 
 ---
 
