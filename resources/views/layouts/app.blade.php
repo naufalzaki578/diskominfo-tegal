@@ -32,43 +32,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+        /* Running Text / News Ticker Animation */
+        @keyframes tickerAnimation {
+            0% {
+                transform: translate3d(100%, 0, 0);
+            }
+            100% {
+                transform: translate3d(-100%, 0, 0);
+            }
+        }
+        .ticker-wrap {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .ticker-move {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
+            animation: tickerAnimation 35s linear infinite;
+        }
+        .ticker-move:hover {
+            animation-play-state: paused;
+            cursor: default;
+        }
     </style>
     @stack('styles')
 </head>
 <body class="bg-slate-50/50 text-slate-800 antialiased flex flex-col min-h-screen">
 
-    {{-- ============ TOPBAR / INFORMASI SINGKAT ============ --}}
-    <div class="bg-diskominfo-navy text-slate-300 text-xs py-1.5 px-4 border-b border-white/5 hidden sm:block">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <span class="flex items-center gap-1.5">
-                    <svg class="w-3.5 h-3.5 text-diskominfo-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
-                    </svg>
-                    Slawi, Kabupaten Tegal, Jawa Tengah 52415
-                </span>
-                <span class="flex items-center gap-1.5">
-                    <svg class="w-3.5 h-3.5 text-diskominfo-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                    Jam Pelayanan: Senin - Jumat (Buka 07.15 WIB)
-                </span>
-            </div>
-            <div class="flex items-center gap-4">
-                <a href="{{ route('registrasi.status') }}" class="hover:text-white transition flex items-center gap-1">
-                    <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                    Lacak Berkas Mandiri
-                </a>
+    {{-- ============ TOPBAR / RUNNING TEXT (STICKY) ============ --}}
+    <header class="sticky top-0 z-50 shadow-md shadow-slate-900/10 transition-all duration-200">
+        <div class="bg-diskominfo-navy text-slate-300 text-xs py-1.5 px-4 border-b border-white/10">
+            <div class="max-w-7xl mx-auto flex justify-between items-center gap-4">
+                <div class="flex-1 overflow-hidden flex items-center gap-2">
+                    <span class="shrink-0 flex items-center gap-1 text-[11px] font-bold text-amber-400 uppercase tracking-wider bg-amber-400/15 px-2 py-0.5 rounded border border-amber-400/25 select-none">
+                        <span class="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse"></span>
+                        <span>Info</span>
+                    </span>
+                    <div class="flex-1 overflow-hidden flex items-center">
+                        <marquee behavior="scroll" direction="left" scrollamount="5" onmouseover="this.stop();" onmouseout="this.start();" class="text-xs text-slate-200 font-medium">
+                            📍 Slawi, Kabupaten Tegal, Jawa Tengah 52415 &nbsp;&bull;&nbsp; 🕒 Jam Pelayanan: Senin - Jumat (Buka 07.15 WIB) &nbsp;&bull;&nbsp; 📢 Pendaftaran Magang / PKL Diskominfo Kab. Tegal Periode Aktif Telah Dibuka! &nbsp;&bull;&nbsp; 📞 Hotline: (0283) 4561555
+                        </marquee>
+                    </div>
+                </div>
+                <div class="shrink-0 flex items-center gap-4 hidden sm:flex pl-3 border-l border-white/10">
+                    <a href="{{ route('registrasi.status') }}" class="hover:text-white transition flex items-center gap-1.5 text-xs text-emerald-400 font-medium">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span>Lacak Berkas Mandiri</span>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
 
-    {{-- ============ NAVBAR UTAMA ============ --}}
-    <header class="bg-diskominfo-blue sticky top-0 z-50 shadow-md shadow-slate-900/10 transition-all duration-200">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+        {{-- ============ NAVBAR UTAMA ============ --}}
+        <div class="bg-diskominfo-blue">
+            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
             
             {{-- Brand Logo --}}
             <a href="{{ route('beranda') }}" class="flex items-center gap-3 group">
@@ -233,6 +255,7 @@
                     </a>
                 </div>
             @endguest
+        </div>
         </div>
     </header>
 

@@ -38,6 +38,7 @@
 <section class="py-10 md:py-14 bg-slate-50 min-h-[75vh]">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-8">
 
+
         {{-- JIKA PENGGUNA ADALAH ADMIN --}}
         @if (auth()->user()->role === 'admin')
             <div class="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-6">
